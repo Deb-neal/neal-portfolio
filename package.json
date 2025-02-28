@@ -1,5 +1,5 @@
 {
-  "homepage": "https://neal-portfolio.github.io",
+  "homepage": "https://deb-neal.github.io/neal-portfolio/",
   "name": "dev-neal",
   "version": "0.1.0",
   "private": true,
@@ -32,10 +32,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint .",
-    "deploy": "gh-pages -d build"
+    "lint": "eslint ."
   },
   "eslintConfig": {
     "extends": [
