@@ -9,6 +9,7 @@ import Education from './components/Education/Education.js';
 import Contact from './components/Contact/Contact.js';
 
 function App() {
+  console.log('test');
   return (
     <div id='page'>
       <div className='container-wrap'>
