@@ -1,0 +1,6 @@
+#colorlib-hero {
+  min-height: 500px;
+  background: #fff url(../../images/dev.png);
+  width: 100%;
+  float: left;
+}
