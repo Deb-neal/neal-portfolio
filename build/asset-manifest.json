@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/neal-portfolio/static/css/main.dc95bb7c.css",
-    "main.js": "/neal-portfolio/static/js/main.95435e54.js",
+    "main.js": "/neal-portfolio/static/js/main.6a2c11e4.js",
     "static/js/453.96698978.chunk.js": "/neal-portfolio/static/js/453.96698978.chunk.js",
     "static/media/localo.png": "/neal-portfolio/static/media/localo.3c689bc5deb46af84631.png",
     "static/media/gyeongbuk.png": "/neal-portfolio/static/media/gyeongbuk.c1dbdd9fae775278af2e.png",
@@ -14,11 +14,11 @@
     "static/media/studeaming.png": "/neal-portfolio/static/media/studeaming.b6689f1ace42eac67c71.png",
     "index.html": "/neal-portfolio/index.html",
     "main.dc95bb7c.css.map": "/neal-portfolio/static/css/main.dc95bb7c.css.map",
-    "main.95435e54.js.map": "/neal-portfolio/static/js/main.95435e54.js.map",
+    "main.6a2c11e4.js.map": "/neal-portfolio/static/js/main.6a2c11e4.js.map",
     "453.96698978.chunk.js.map": "/neal-portfolio/static/js/453.96698978.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc95bb7c.css",
-    "static/js/main.95435e54.js"
+    "static/js/main.6a2c11e4.js"
   ]
 }
