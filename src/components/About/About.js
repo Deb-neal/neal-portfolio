@@ -1,4 +1,5 @@
 import React from 'react';
+import './About.css';
 
 function About() {
   return (
@@ -18,7 +19,7 @@ function About() {
                     <h2 className='colorlib-heading'>서버 개발자</h2>
                     <p>
                       <strong>안녕하세요. 백엔드 개발자 안민수입니다.</strong>
-                    </p>{' '}
+                    </p>
                     <p>
                       현재, (주) 살린이라는 회사에 입사해서, 백엔드 개발자로
                       근무하고있습니다. 회사내, 프로젝트에서 메인 백앤드로서,
@@ -67,52 +68,6 @@ function About() {
                         말할수있을정로도 노력하고 발전하려고 합니다.
                       </strong>
                     </p>
-                  </div>
-                </div>
-              </div>
-              <div className='row'>
-                <div
-                  className='col-md-3 animate-box fadeInLeft animated'
-                  data-animate-effect='fadeInLeft'
-                >
-                  <div className='services color-1'>
-                    <span className='icon2'>
-                      <i className='icon-data'></i>
-                    </span>
-                    <h3>JavaScript</h3>
-                  </div>
-                </div>
-                <div
-                  className='col-md-3 animate-box fadeInRight animated'
-                  data-animate-effect='fadeInRight'
-                >
-                  <div className='services color-2'>
-                    <span className='icon2'>
-                      <i className='icon-globe-outline'></i>
-                    </span>
-                    <h3>Node.js</h3>
-                  </div>
-                </div>
-                <div
-                  className='col-md-3 animate-box fadeInRight animated'
-                  data-animate-effect='fadeInRight'
-                >
-                  <div className='services color-2'>
-                    <span className='icon2'>
-                      <i className='icon-globe-outline'></i>
-                    </span>
-                    <h3>Nest.js</h3>
-                  </div>
-                </div>
-                <div
-                  className='col-md-3 animate-box fadeInUp animated'
-                  data-animate-effect='fadeInTop'
-                >
-                  <div className='services color-3'>
-                    <span className='icon2'>
-                      <i className='icon-bulb'></i>
-                    </span>
-                    <h3>React</h3>
                   </div>
                 </div>
               </div>

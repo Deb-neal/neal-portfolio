@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* Removed body style override to prevent conflicts with global theme */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.home-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #2c98f0;
+}
+
+.home-header h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.home-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 150px;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-item i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c98f0;
+}
+
+.tech-item span {
+  font-weight: 500;
+  color: #444;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #2c98f0;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #2180ca;
+}
+
+.secondary-btn {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.secondary-btn:hover {
+  background-color: #eaeaea;
+}
+
+.terminal-box {
+  background-color: #282c34;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 800px;
+  color: #f8f8f2;
+  font-family: 'Courier New', monospace;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.command-line {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.prompt {
+  color: #50fa7b;
+  margin-right: 10px;
+}
+
+.command {
+  color: #f8f8f2;
+}
+
+.output {
+  color: #bd93f9;
+  margin-bottom: 1rem;
+  white-space: pre-line;
+}
+
+/* Add responsive styling */
+@media screen and (max-width: 768px) {
+  .home-container {
+    padding: 1rem;
+  }
+  
+  .home-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .home-header h2 {
+    font-size: 1.4rem;
+  }
+  
+  .tech-stack {
+    gap: 1rem;
+  }
+
+  .tech-item {
+    width: 120px;
+    padding: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .terminal-box {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .tech-item {
+    width: 100px;
+    padding: 0.8rem;
+  }
+  
+  .tech-item i {
+    font-size: 1.8rem;
+  }
+}
