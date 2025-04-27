@@ -61,6 +61,30 @@ function Skills() {
               또한, WebGL 콘텐츠 배포를 위한 클라우드 스토리지 설정 및 최적화를
               담당하며, 메타버스 서비스를 위한 안정적인 환경을 구축했습니다.
             </p>
+
+            <h3>기타 주요 기술 경험</h3>
+            <ul>
+              <li>
+                <strong>배포 자동화:</strong> 프론트엔드/백엔드 모두 GitLab push
+                시 Jenkins를 통해 자동 배포되도록 파이프라인 구축
+              </li>
+              <li>
+                <strong>DevOps 환경 구성:</strong> Jenkins, GitLab, Docker를
+                활용한 사내 DevOps 플랫폼 유지보수 및 운영
+              </li>
+              <li>
+                <strong>레거시 개선:</strong> TypeORM 0.2에서 0.3으로의 버전
+                업그레이드를 통해 빌드 속도 개선 및 코드 안정성 향상
+              </li>
+              <li>
+                <strong>KT Cloud 마이그레이션:</strong> AWS 기반 프로젝트를 KT
+                Cloud로 이전하며 각종 서비스 불일치를 해결한 경험
+              </li>
+              <li>
+                <strong>React CMS 유지보수:</strong> 사내 CMS 페이지 기능 추가
+                및 API 연동 최적화
+              </li>
+            </ul>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ function Education() {
               <br />
               코드스테이츠 SEB 33기 수료 (소프트 엔지니어 풀스택 커리큘럼)
               <br />
-              토스 Learn.s high 1기 ( 2024.12.17 - 2025.01.17 )
+              토스 Learners high 1기 ( 2024.12.17 - 2025.01.17 )
             </p>
           </div>
         </div>
