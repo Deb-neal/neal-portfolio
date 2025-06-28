@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/neal-portfolio/static/css/main.085d31f9.css",
-    "main.js": "/neal-portfolio/static/js/main.8faa74a8.js",
-    "static/js/453.96698978.chunk.js": "/neal-portfolio/static/js/453.96698978.chunk.js",
-    "static/media/localo.png": "/neal-portfolio/static/media/localo.3c689bc5deb46af84631.png",
-    "static/media/gyeongbuk.png": "/neal-portfolio/static/media/gyeongbuk.c1dbdd9fae775278af2e.png",
-    "static/media/readyplay.png": "/neal-portfolio/static/media/readyplay.91e7668f987672f2df9f.png",
-    "static/media/dev.png": "/neal-portfolio/static/media/dev.16e16e099617d12757a6.png",
-    "static/media/b-log.png": "/neal-portfolio/static/media/b-log.e40e5156ee16d0ef791b.png",
-    "static/media/aisurvey.png": "/neal-portfolio/static/media/aisurvey.8c4000ac100508aca300.png",
-    "static/media/aitalkerRss.png": "/neal-portfolio/static/media/aitalkerRss.3dcba7c06a481bec669d.png",
-    "static/media/my.jpeg": "/neal-portfolio/static/media/my.5a8f18312211114b5fed.jpeg",
-    "static/media/studeaming.png": "/neal-portfolio/static/media/studeaming.b6689f1ace42eac67c71.png",
-    "index.html": "/neal-portfolio/index.html",
-    "main.085d31f9.css.map": "/neal-portfolio/static/css/main.085d31f9.css.map",
-    "main.8faa74a8.js.map": "/neal-portfolio/static/js/main.8faa74a8.js.map",
-    "453.96698978.chunk.js.map": "/neal-portfolio/static/js/453.96698978.chunk.js.map"
+    "main.css": "/static/css/main.c00061c1.css",
+    "main.js": "/static/js/main.254f7da1.js",
+    "static/js/453.96698978.chunk.js": "/static/js/453.96698978.chunk.js",
+    "static/media/localo.png": "/static/media/localo.3c689bc5deb46af84631.png",
+    "static/media/gyeongbuk.png": "/static/media/gyeongbuk.c1dbdd9fae775278af2e.png",
+    "static/media/readyplay.png": "/static/media/readyplay.91e7668f987672f2df9f.png",
+    "static/media/dev.png": "/static/media/dev.16e16e099617d12757a6.png",
+    "static/media/b-log.png": "/static/media/b-log.e40e5156ee16d0ef791b.png",
+    "static/media/aisurvey.png": "/static/media/aisurvey.8c4000ac100508aca300.png",
+    "static/media/aitalkerRss.png": "/static/media/aitalkerRss.3dcba7c06a481bec669d.png",
+    "static/media/aws.png": "/static/media/aws.a4e8292273ae5ab1f305.png",
+    "static/media/my.jpeg": "/static/media/my.5a8f18312211114b5fed.jpeg",
+    "static/media/studeaming.png": "/static/media/studeaming.b6689f1ace42eac67c71.png",
+    "index.html": "/index.html",
+    "main.c00061c1.css.map": "/static/css/main.c00061c1.css.map",
+    "main.254f7da1.js.map": "/static/js/main.254f7da1.js.map",
+    "453.96698978.chunk.js.map": "/static/js/453.96698978.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.085d31f9.css",
-    "static/js/main.8faa74a8.js"
+    "static/css/main.c00061c1.css",
+    "static/js/main.254f7da1.js"
   ]
 }
