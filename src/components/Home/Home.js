@@ -7,14 +7,13 @@ function Home() {
     <section className='home-container' data-section='home'>
       <div className='home-header'>
         <h1>Min su Ann</h1>
-        <h2>Back-end Developer & System Architect</h2>
+        <h2>Backend Engineer & System Architect</h2>
       </div>
 
       <div className='home-content'>
         <p>
-          Passionate back-end developer with expertise in building robust,
-          scalable server-side applications and APIs. Specializing in database
-          design, system architecture, and performance optimization.
+          (주)살린에서 메타버스 플랫폼의 백엔드 인프라를 담당하며, NestJS 기반
+          API 서버 개발과 AWS/KT Cloud 인프라 운영을 주도하고 있습니다.
         </p>
 
         <div className='terminal-box'>

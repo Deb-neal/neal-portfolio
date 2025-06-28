@@ -16,7 +16,7 @@ function Header() {
         <div className='text center'>
           <img src={picture1} className='author-img' alt='Min su Ann'></img>
           <h1 id='colorlib-logo'>Min su Ann</h1>
-          <span className='position'>Server development</span>
+          <span className='position'>Backend Engineer</span>
         </div>
         <nav id='colorlib-main-menu' role='navigation' className='navbar'>
           <div id='navbar' className='collapse'>

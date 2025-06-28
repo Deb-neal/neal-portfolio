@@ -1,5 +1,6 @@
 import React from 'react';
 import './Skills.css';
+import awsBadge from '../../images/aws.png';
 
 function Skills() {
   return (
@@ -61,6 +62,20 @@ function Skills() {
               또한, WebGL 콘텐츠 배포를 위한 클라우드 스토리지 설정 및 최적화를
               담당하며, 메타버스 서비스를 위한 안정적인 환경을 구축했습니다.
             </p>
+
+            <h3>자격증</h3>
+            <div className='certification-section'>
+              <ul>
+                <li>
+                  <strong>AWS Certified Developer - Associate</strong> (2025)
+                </li>
+              </ul>
+              <img
+                src={awsBadge}
+                alt='AWS Certified Developer - Associate'
+                className='aws-badge'
+              />
+            </div>
 
             <h3>기타 주요 기술 경험</h3>
             <ul>

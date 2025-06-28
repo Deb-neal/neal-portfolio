@@ -11,7 +11,7 @@ h4,
 h5,
 h6 {
   color: #ffffff;
-  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
   font-weight: 600;
   margin: 0 0 30px 0;
   letter-spacing: 0.03em;
@@ -46,7 +46,7 @@ h3 {
   max-width: 100%;
   min-height: 100vh;
   margin: 0 auto;
-  background-color: #233446;
+  background: linear-gradient(135deg, #0f1419 0%, #1a1a2e 50%, #16213e 100%);
   display: flex;
   flex-direction: row;
   position: relative;
@@ -71,12 +71,15 @@ h3 {
   top: 0;
   overflow-y: auto;
   z-index: 1001;
-  background: #0f1923;
+  background: linear-gradient(180deg, #0a0e13 0%, #1a1a2e 100%);
+  border-right: 1px solid rgba(0, 245, 255, 0.2);
+  backdrop-filter: blur(20px);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
   display: flex;
   flex-direction: column;
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* 사이드바 */
@@ -194,10 +197,11 @@ ul {
   display: block;
   font-size: 11px;
   text-transform: uppercase;
-  color: #00b2a9;
+  color: #00f5ff;
   font-weight: 500;
   letter-spacing: 5px;
-  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  text-shadow: 0 0 10px rgba(0, 245, 255, 0.8);
 }
 
 .row {
@@ -252,34 +256,41 @@ ul {
 }
 
 .progress {
-  background: #364859;
+  background: rgba(255, 255, 255, 0.1);
   width: 100%;
-  border-radius: 8px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
 }
 
 .progress-bar.color-1 {
-  background: #2c98f0;
+  background: linear-gradient(90deg, #00f5ff, #667eea);
   width: 60%;
+  box-shadow: 0 0 15px rgba(0, 245, 255, 0.5);
 }
 
 .progress-bar.color-2 {
-  background: #d8962c;
+  background: linear-gradient(90deg, #ff00ff, #d8962c);
   width: 60%;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
 }
 
 .progress-bar.color-3 {
-  background: #f9bf3f;
+  background: linear-gradient(90deg, #00ff88, #f9bf3f);
   width: 50%;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
 }
 
 .progress-bar.color-6 {
-  background: #bd6ed1;
+  background: linear-gradient(90deg, #ff00ff, #bd6ed1);
   width: 60%;
+  box-shadow: 0 0 15px rgba(189, 110, 209, 0.5);
 }
 
 .progress-bar.color-7 {
-  background: #d66a93;
+  background: linear-gradient(90deg, #ff00ff, #d66a93);
   width: 60%;
+  box-shadow: 0 0 15px rgba(214, 106, 147, 0.5);
 }
 
 .progress-bar {
@@ -326,9 +337,10 @@ ul {
 }
 
 .panel-default > .panel-heading {
-  color: #e6e6e6;
-  background-color: #2a3b4d;
-  border-color: #364859;
+  color: #e0e6ed;
+  background: linear-gradient(135deg, rgba(0, 245, 255, 0.1), rgba(255, 0, 255, 0.1));
+  border-color: rgba(0, 245, 255, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .panel-group .panel-heading {
@@ -354,7 +366,7 @@ ul {
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
   background-color: #008080;
   color: #ffffff;
   position: relative;
@@ -370,8 +382,10 @@ ul {
 .panel-body {
   padding: 1.5em;
   margin-top: 5px;
-  border: 1px solid #364859;
-  background-color: #233446;
+  border: 1px solid rgba(0, 245, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
 }
 
 .panel-default {
@@ -466,10 +480,16 @@ ul {
 }
 
 a {
-  color: #008080;
+  color: #00f5ff;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  text-shadow: 0 0 5px rgba(0, 245, 255, 0.5);
+}
+
+a:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
 }
 
 h1,
@@ -479,7 +499,7 @@ h4,
 h5,
 h6 {
   color: #ffffff;
-  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
   font-weight: 600;
   margin: 0 0 30px 0;
   letter-spacing: 0.03em;

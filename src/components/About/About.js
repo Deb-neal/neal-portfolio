@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import awsBadge from '../../images/aws.png';
 
 function About() {
   return (
@@ -16,7 +17,14 @@ function About() {
                 <div className='col-md-12'>
                   <div className='about-desc'>
                     <span className='heading-meta'>About Me</span>
-                    <h2 className='colorlib-heading'>서버 개발자</h2>
+                    <div className='heading-with-badge'>
+                      <h2 className='colorlib-heading'>Backend Engineer</h2>
+                      <img
+                        src={awsBadge}
+                        alt='AWS Certified Developer'
+                        className='aws-badge-small'
+                      />
+                    </div>
                     <p>
                       <strong>안녕하세요. 백엔드 개발자 안민수입니다.</strong>
                     </p>

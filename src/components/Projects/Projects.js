@@ -76,15 +76,16 @@ function Projects() {
   const projects = [
     {
       image: aitalkerRss,
-      url: 'https://rss.mirrordays.com/',
-      title: 'Aitalker Rss',
-      subtitle: '매일 신문을 찾아보고, 트렌트를 파악하기 힘들다면? 검색하세요!',
+      url: 'https://aitalker.co.kr/ms1993/2553',
+      title: 'AI Talker 서비스 고도화',
+      subtitle:
+        '2025.02 ~ 진행 중 | OpenAI Assistant API를 활용한 개인용 AI 챗봇 플랫폼',
       description:
-        '각각의 언론사에서 제공하는 rss를, vector Store에 저장 저장된 데이터를 바탕으로, 요약정보를 출력하거나, 특정 키워드를 유저에게 보여줍니다.',
+        'OpenAI Vector Store에 파일을 저장하고 이를 기반으로 질의응답이 가능한 파일 기반 학습 시스템을 구축. Function Calling 기능을 활용하여 대화 중 특정 키워드 및 문맥을 감지해 외부 API를 자동 호출하는 트리거 로직을 구현했습니다.',
       links: [
         {
-          url: 'https://rss.mirrordays.com/',
-          text: '구현 기능 상세보기',
+          url: 'https://aitalker.co.kr/ms1993/2553',
+          text: '서비스 바로가기',
           icon: 'icon-data',
         },
       ],
@@ -93,15 +94,15 @@ function Projects() {
     {
       image: aisurvey,
       url: 'https://aisurvey.mirrordays.com/',
-      title: 'Aisurvey',
+      title: 'AI Survey 고도화 작업',
       subtitle:
-        'openAi assistant를 사용해서, 설문조사를 만들어주는 챗봇 프로젝트',
+        '2025.01 ~ 진행 중 | OpenAI API를 활용한 대화형 설문 생성 서비스',
       description:
-        '매번 번거로운 설문조사를 만들어주는 기능 및 주제만 입력해도 거기에 맞는 설문조사 템플릿을 생성시켜줍니다.',
+        'AI 기반 대화형 설문 생성 서비스 프로토타입을 구현하여 사업화 가능성을 검증. 서비스 전반에 필요한 데이터베이스 ERD를 설계하고 구축하며, Jenkins 기반의 CI/CD 파이프라인을 통해 자동 빌드 및 배포 프로세스를 구현했습니다.',
       links: [
         {
           url: 'https://aisurvey.mirrordays.com/',
-          text: '구현 기능 상세보기',
+          text: '서비스 바로가기',
           icon: 'icon-data',
         },
       ],
@@ -127,20 +128,20 @@ function Projects() {
     {
       image: localo,
       url: 'http://xn--2o2ba144o.com/',
-      title: '명: localo',
+      title: '로컬로 (Localro)',
       subtitle:
-        '경상북도 창원시를 모티브로한, 가상공간 메타버스 프로젝트 직접 창원시를 방문하지않고, 실제 창원시를 구경하며 신선한 수산물을 구매할수있는 메타버스 프로젝트',
+        '2022.03 ~ 2023.11 | 창원시 어시장을 모티브로 한 메타버스 커머스 서비스',
       description:
-        '직접 어시장에 방문하지 않고, 가상공간을 통해 신선한 해산물을 구매할수있으며, 창원시를 모티브로한 가상공간을 통해, 생생한 현장감을 직접 느낄수있습니다.',
+        'NestJS 기반 API 서버의 유지보수 및 기능 개선을 주도. Google Firebase Authentication을 활용하여 유저 인증 및 사용자별 데이터 관리 로직을 구현하고, AWS 인프라(ECS, EC2, S3, RDS 등) 구성 및 운영을 담당했습니다.',
       links: [
         {
           url: 'https://play.google.com/store/apps/details?id=com.Salin.Localo&pcampaignid=web_share&pli=1',
-          text: '안드로이드 다운로드링크',
+          text: '안드로이드 다운로드',
           icon: 'icon-data',
         },
         {
           url: 'https://apps.apple.com/kr/app/%EB%A1%9C%EC%BB%AC%EB%A1%9C/id6463846655',
-          text: '아이폰 다운로드링크',
+          text: '아이폰 다운로드',
           icon: 'icon-data',
         },
       ],
@@ -148,21 +149,21 @@ function Projects() {
     },
     {
       image: gyeongbuk,
-      url: '',
-      title: '명: 경북 메타포트',
+      url: 'https://gb.go.kr/metaport',
+      title: '경북메타포트 (GB metaport)',
       subtitle:
-        '경상북도를 모티브로 한 가상공간 프로젝트 경상북도도청을 모티브로 하며, 직접 방문하지않고, 실제 경북도청을 구경하며, 여러가지 체험을 할 수있는 메타버스 프로젝트',
+        '2023.03 ~ 진행 중 | 경북도청을 모티브로 한 메타버스 서비스 구축 국가사업',
       description:
-        '경북도청을 가상공간으로 구현하여, 실제와 비슷한 공간을 웹 브라우저로 구경할 수 있습니다. 그외 미니게임을 비롯하여, 여러가지 컨텐츠를 바탕으로 생생한 생동감을 느낄 수 있습니다.',
+        'AWS에서 KT Cloud로 인프라 마이그레이션 및 TypeORM 0.2→0.3 업그레이드를 통한 성능 개선. Redis 기반 캐싱 전략 도입과 JMeter 부하 테스트로 시스템 안정성을 검증하여 TPS 20→102까지 성능을 향상시켰습니다.',
       links: [
         {
           url: 'https://play.google.com/store/apps/details?id=com.salin.GBMeta&pcampaignid=web_share',
-          text: '안드로이드 다운로드링크',
+          text: '안드로이드 다운로드',
           icon: 'icon-data',
         },
         {
           url: 'https://gb.go.kr/metaport',
-          text: '웹질 링크',
+          text: '웹 서비스 바로가기',
           icon: 'icon-data',
         },
       ],

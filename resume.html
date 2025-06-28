@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>안민수 - Backend Engineer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 30px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        animation: slideDown 0.8s ease-out;
+      }
+
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+        color: white;
+        font-weight: bold;
+        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+      }
+
+      .header-content h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .header-content .subtitle {
+        font-size: 1.5rem;
+        color: #666;
+        margin-bottom: 15px;
+      }
+
+      .contact-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.1rem;
+        color: #555;
+      }
+
+      .quote {
+        background: rgba(102, 126, 234, 0.1);
+        border-left: 4px solid #667eea;
+        padding: 20px;
+        margin: 20px 0;
+        font-style: italic;
+        border-radius: 0 10px 10px 0;
+      }
+
+      .section {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        animation: fadeInUp 0.8s ease-out;
+      }
+
+      .section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #333;
+        border-bottom: 3px solid #667eea;
+        padding-bottom: 10px;
+      }
+
+      .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .tech-tag {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+        padding: 8px 16px;
+        border-radius: 25px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        transition: transform 0.3s ease;
+      }
+
+      .tech-tag:hover {
+        transform: translateY(-2px);
+      }
+
+      .experience-item {
+        border-left: 4px solid #667eea;
+        padding-left: 20px;
+        margin-bottom: 30px;
+        position: relative;
+      }
+
+      .experience-item::before {
+        content: '';
+        position: absolute;
+        left: -8px;
+        top: 0;
+        width: 12px;
+        height: 12px;
+        background: #667eea;
+        border-radius: 50%;
+      }
+
+      .company-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .company-name {
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .duration {
+        background: rgba(102, 126, 234, 0.1);
+        padding: 5px 15px;
+        border-radius: 15px;
+        font-size: 0.9rem;
+        color: #667eea;
+        font-weight: 500;
+      }
+
+      .position {
+        color: #666;
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+      }
+
+      .project-item {
+        background: rgba(102, 126, 234, 0.05);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(102, 126, 234, 0.2);
+      }
+
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .project-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .project-period {
+        background: #667eea;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 12px;
+        font-size: 0.8rem;
+      }
+
+      .achievements {
+        list-style: none;
+        margin-top: 15px;
+      }
+
+      .achievements li {
+        padding: 8px 0;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .achievements li::before {
+        content: '▶';
+        position: absolute;
+        left: 0;
+        color: #667eea;
+        font-weight: bold;
+      }
+
+      .certification {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+        padding: 15px 20px;
+        border-radius: 10px;
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .cert-name {
+        font-weight: bold;
+      }
+
+      .cert-score {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 0.9rem;
+      }
+
+      .portfolio-link {
+        display: inline-block;
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+      }
+
+      .portfolio-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+      }
+
+      .intro-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #555;
+      }
+
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .highlight {
+        background: linear-gradient(
+          120deg,
+          rgba(102, 126, 234, 0.2) 0%,
+          rgba(102, 126, 234, 0.2) 100%
+        );
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+
+      @media (max-width: 768px) {
+        .header {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .header-content h1 {
+          font-size: 2rem;
+        }
+
+        .company-header,
+        .project-header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+
+        .tech-stack {
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <div class="header">
+        <div class="profile-img">안</div>
+        <div class="header-content">
+          <h1>안민수</h1>
+          <div class="subtitle">Backend Engineer</div>
+          <div class="contact-info">
+            <span>📧 dksaksen7@gmail.com</span>
+          </div>
+          <div class="quote">
+            "Backend Developer는 개발 중심의 역할이라면, Backend Engineer는
+            단순한 개발을 넘어 아키텍처 설계, 성능 최적화, 인프라 연계, 보안까지
+            고려하는 더 넓은 기술적 책임을 내포합니다."
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech Stack Section -->
+      <div class="section">
+        <h2>🛠 기술 스택</h2>
+        <div class="tech-stack">
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">NestJS</span>
+          <span class="tech-tag">Jenkins</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">AWS</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+      </div>
+
+      <!-- Experience Section -->
+      <div class="section">
+        <h2>💼 경력</h2>
+        <div class="experience-item">
+          <div class="company-header">
+            <div class="company-name">(주)살린 i-lab</div>
+            <div class="duration">2022.04 ~ 재직 중</div>
+          </div>
+          <div class="position">매니저 | 정규직</div>
+          <p>
+            <strong>메타버스 플랫폼 개발 백엔드 담당 및 인프라 운영</strong>
+          </p>
+          <ul class="achievements">
+            <li>
+              GitLab 권한 세분화 및 접근통제 설정 (화이트리스트 수집후, IP차단
+              적용)
+            </li>
+            <li>Jenkins 기반 CI/CD 파이프라인 구축 및 유지</li>
+            <li>
+              AWS 기반의 인프라 셋팅 및 유지보수, EC2, S3를 통한 프로젝트 배포
+              및 도메인 연결
+            </li>
+            <li>
+              AWS Cognito를 통해 사용자 인증 및 세션 관리를 구현하고, 로그인
+              상태 유지
+            </li>
+            <li>KT Cloud 기반 메타버스 서비스의 초기 셋업 및 운영</li>
+            <li>
+              OpenAI API(Function Calling, Vector store 등)를 활용한 AI 응답형
+              챗봇 서비스 구축
+            </li>
+            <li>Milvus (VectorDB) 초기 셋업</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div class="section">
+        <h2>🚀 프로젝트</h2>
+
+        <div class="project-item">
+          <div class="project-header">
+            <div class="project-title">AI Talker 서비스 고도화</div>
+            <div class="project-period">2025.02 ~ 진행 중</div>
+          </div>
+          <p>
+            OpenAI Assistant API를 활용한 개인용 AI 챗봇 플랫폼과 관리자
+            서비스를 개발했습니다.
+          </p>
+          <ul class="achievements">
+            <li>
+              OpenAI Vector Store에 파일을 저장하고 이를 기반으로 질의응답이
+              가능한 파일 기반 학습 시스템을 구축
+            </li>
+            <li>
+              OpenAI Function Calling 기능을 활용하여 대화 중 특정 키워드 및
+              문맥을 감지해 외부 API를 자동 호출하는 트리거 로직을 구현
+            </li>
+            <li>
+              레거시 서버 로직을 최소한의 의존성으로 분리, 모듈화 및 서비스 계층
+              리팩토링을 통해 API의 안정성과 재사용성을 확보
+            </li>
+            <li>
+              Jenkins를 활용한 백엔드 서버의 자동 빌드 및 배포 파이프라인 구축
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <div class="project-title">AI Survey 고도화 작업</div>
+            <div class="project-period">2025.01 ~ 진행 중</div>
+          </div>
+          <p>
+            OpenAI API를 활용한 서비스 사업화 가능성을 검증하기 위한
+            프로젝트였습니다.
+          </p>
+          <ul class="achievements">
+            <li>
+              AI 기반 대화형 설문 생성 서비스 프로토타입을 성공적으로 구현하고
+              사업화 가능성 검증
+            </li>
+            <li>서비스 전반에 필요한 데이터베이스 ERD를 설계하고 구축</li>
+            <li>
+              AWS 인프라 환경 구성 및 Route 53을 활용한 도메인 연결을 통해
+              서비스 배포
+            </li>
+            <li>
+              Jenkins 기반의 CI/CD 파이프라인 구축, GitLab 연동을 통한 자동 빌드
+              및 배포 프로세스를 구현
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <div class="project-title">경북메타포트 (GB metaport)</div>
+            <div class="project-period">2023.03 ~ 진행 중</div>
+          </div>
+          <p>경북도청을 모티브로 한 메타버스 서비스 구축 국가사업입니다.</p>
+          <ul class="achievements">
+            <li>
+              서비스 초기 AWS 환경에서 구축된 인프라를 KT Cloud 환경으로
+              마이그레이션
+            </li>
+            <li>
+              TypeORM 0.2 → 0.3으로 버전 업그레이드 진행, 레거시 쿼리 로직과
+              Repository 구조를 최신 버전에 맞게 마이그레이션
+            </li>
+            <li>Redis 기반 캐싱 전략 도입 및 쿼리 최적화 수행</li>
+            <li>
+              JMeter 기반 부하 테스트를 설계 및 실행하여 예상 트래픽에 대한
+              시스템 안정성 검증
+            </li>
+            <li class="highlight">
+              NestJS 기반 API 서버 구축 및 유지보수, TPS 20 → 102까지 성능을
+              향상
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <div class="project-title">로컬로 (Localro)</div>
+            <div class="project-period">2022.03 ~ 2023.11</div>
+          </div>
+          <p>창원시 어시장을 모티브로 한 메타버스 서비스입니다.</p>
+          <ul class="achievements">
+            <li>NestJS 기반 API 서버의 유지보수 및 기능 개선을 주도</li>
+            <li>
+              Google Firebase Authentication 활용하여 유저 인증 및 사용자별
+              데이터 관리 로직을 구현
+            </li>
+            <li>AWS 인프라(ECS, EC2, S3, RDS 등) 구성 및 운영을 담당</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Portfolio Section -->
+      <div class="section">
+        <h2>🔗 포트폴리오</h2>
+        <a href="#" class="portfolio-link">neal 포트폴리오 보기</a>
+      </div>
+
+      <!-- Education Section -->
+      <div class="section">
+        <h2>🎓 교육</h2>
+        <div class="experience-item">
+          <div class="company-header">
+            <div class="company-name">코드스테이츠</div>
+            <div class="duration">2021.05 ~ 2021.12</div>
+          </div>
+          <div class="position">
+            Advanced Software engineering, immersive program
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications Section -->
+      <div class="section">
+        <h2>🏆 자격증</h2>
+        <div class="certification">
+          <div class="cert-name">AWS Certified Developer - Associate</div>
+          <div class="cert-score">730점 | 2025.05</div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="section">
+        <h2>👨‍💻 자기소개</h2>
+        <div class="intro-text">
+          <p>
+            소규모의 스타트업 특성상, 백엔드 분야에 국한되지 않고 여러 분야를
+            두루 경험했습니다.
+          </p>
+          <br />
+          <p>
+            전반적으로, Jenkins 기반 CI/CD 구축부터 AWS 인프라 운영, NestJS 서버
+            개발까지 백엔드 전반을 주도적으로 수행했고, 특히
+            <span class="highlight"
+              >반복 작업을 자동화하여 효율을 높이고, 사용자 편의성을 고려한
+              시스템 개선</span
+            >에 강점을 지니고 있습니다.
+          </p>
+          <br />
+          <p>
+            최근에는 OpenAI 기반의 챗봇 서비스 개발에도 참여하며 AI 기술 역량도
+            확장 중입니다.
+          </p>
+          <br />
+          <p>
+            기술 선택에는 항상 근거를 두고, 실사용자와 팀 모두에게 도움이 되는
+            방향을 고민하며 주도적으로 움직입니다.
+          </p>
+          <br />
+          <p>
+            <strong
+              >다시한번 소개합니다. Backend developer의 역할을 넘어, 설계와
+              최적화, 인프라까지 아우르는 넓은 시야와 책임을 지향하는
+              'Engineer'로 성장하고 있는 개발자 안민수입니다.</strong
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
