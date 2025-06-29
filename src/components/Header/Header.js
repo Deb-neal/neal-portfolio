@@ -36,16 +36,16 @@ function Header() {
                   Tech Skills
                 </Link>
               </li>
+              <li className={location.pathname === '/projects' ? 'active' : ''}>
+                <Link to='/projects' data-nav-section='education'>
+                  Project
+                </Link>
+              </li>
               <li
                 className={location.pathname === '/education' ? 'active' : ''}
               >
                 <Link to='/education' data-nav-section='work'>
                   Education
-                </Link>
-              </li>
-              <li className={location.pathname === '/projects' ? 'active' : ''}>
-                <Link to='/projects' data-nav-section='education'>
-                  Project
                 </Link>
               </li>
               <li className={location.pathname === '/contact' ? 'active' : ''}>
